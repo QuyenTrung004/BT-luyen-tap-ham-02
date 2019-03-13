@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text"id="number1">
+<input type="text"id="number2">
+<button onclick="check()">Kiem tra</button>
+<script>
+    function check() {
+        let a=parseInt(document.getElementById('number1'));
+        let b=parseInt(document.getElementById('number2'))
+        let tong = a + b ;
+            if(a>b){
+            alert(a+ ' lon hon  '+b);
+            } else {
+            alert('Tong 2 so la: '+tong);
+            }
+    }
+</script>
+
+</body>
+</html>

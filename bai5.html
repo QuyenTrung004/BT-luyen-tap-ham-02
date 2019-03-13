@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="checkStar(prompt('ten sao: '))">Check Star</button>
+<script>
+    let mang = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe",  "Regulus"];
+    let mang2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major",  "Leo"];
+    function checkStar(star) {
+        let  flag = false;
+        for(let i=0; i<mang.length; i++){
+            if (mang[i] == star){
+                flag = true;
+                alert('Sao ' + star + ' nam trong chom sao : ' + mang2[i]);
+                break;
+            }
+        }
+    if(!flag) {
+            alert(star + ' Khong co ngoi Sao nao ca !');
+        }
+    }
+    </script>
+</body>
+</html>
